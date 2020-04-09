@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native';
 export default function Lista({mensagens}) {
   return (
     <View style={styles.sectionContainer}>
-      <Text style={styles.sectionTitle}>Mensagens já lidas pelo usuário</Text>
+      <Text style={styles.sectionTitle}>Mensagens já lidas !</Text>
       {mensagens.map(el => {
         return (
           <Text key={el} style={styles.sectionDescription}>
