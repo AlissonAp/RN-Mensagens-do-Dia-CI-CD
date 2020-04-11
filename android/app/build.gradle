@@ -119,6 +119,8 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
 def enableHermes = project.ext.react.get("enableHermes", false);
+def rawBuildNumber = System.getenv("BITRISE_BUILD_NUMBER") ?: "0"
+def buildNumber = Integer.parseInt(rawBuildNumber)
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -132,6 +134,8 @@ android {
         applicationId "com.rnfastlane"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode buildNumber
+        versionName "1.2.$buildNumber" //optional
     }
     splits {
         abi {
