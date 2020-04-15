@@ -9,7 +9,7 @@ Desenvolvimento
 
 Pensando em solucionar o problema de processos de desenvolvimento de softwares mobile, pensamos em criar um arquitetura simples, porém, que atende as necessidades de integração e publicação de software. Para isso iremos seguir como base a arquitetura ilustrada na figura abaixo.
 
-
+![Arquitura do CI/CD](https://github.com/AlissonAp/RN-Mensagens-do-Dia-CI-CD/blob/master/docs/Images_CI_CD/Arquitetura.png)
 
 Como base para nossa arquitetura de CI/CD, escolhemos uma ferramenta SAAS chamada Bitrise, ela possui embutida dentro dela processos para compilação de aplicativos mobile para IOS e Android, sem precisar manter nenhum hardware para geração dos builds, assim como, possui integração com fastlane próprio, usado para armazenamento das configurações de deploy na Play Store, tornando assim o processo centralizado em uma única ferramenta.
 
