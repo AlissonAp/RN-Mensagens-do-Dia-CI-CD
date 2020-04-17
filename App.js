@@ -122,6 +122,8 @@ const App: () => React$Node = () => {
     'Sintonize a positividade no rádio da vida.',
     'Vai dar tudo certo.',
     'Que suas próximas horas sejam carregadas de pensamentos positivos e muita paz no coração.',
+    'A diferença entre o possível e o impossível está no tamanho da sua motivação e determinação.',
+    'Minha meta é 100%. 99% nem rola.',
   ]);
 
   useEffect(() => {
@@ -146,11 +148,12 @@ const App: () => React$Node = () => {
               <Text style={styles.sectionTitle}>Mensagem do dia</Text>
               <Text style={styles.sectionDescription}>{mensagemDia}</Text>
             </View>
-            <View style={styles.sectionContainer}></View>
+            <View style={styles.sectionContainer} />
             <View style={styles.sectionContainer}>
               <Button
                 title="Nova mensagem"
-                onPress={() => gerarNovaMensagem()}></Button>
+                onPress={() => gerarNovaMensagem()}
+              />
             </View>
 
             <Lista mensagens={mensagensLidas} />
