@@ -15,7 +15,7 @@ Como base para nossa arquitetura de CI/CD, escolhemos uma ferramenta SAAS chamad
 
 Para testarmos a nossa arquitetura, criamos um aplicativo em React Native de mensagens do dia, que tem por principal objetivo gerar mensagens de motivação a cada clique em um botão. Na imagem abaixo é possível ver uma captura de tela do aplicativo criado.
 
-![App](https://github.com/AlissonAp/RN-Mensagens-do-Dia-CI-CD/blob/master/docs/Images_CI_CD/App.png)
+![App](https://github.com/AlissonAp/RN-Mensagens-do-Dia-CI-CD/blob/master/docs/Images_CI_CD/App.jpg)
 
 O repositório em questão possui 2 branchs, a master e a develop, e a automatização do processo de testes, build e deploy é disparada automaticamente no Bitrise, toda vez que um pull request é aprovado em alguma dessas branchs. Caso o Pull Request aprovado for impactado na branch DEVELOP o Workflow de build executado será o Alfa, liberando uma nova versão de testes para testadores específicos configurados no Play Store Console.
 
