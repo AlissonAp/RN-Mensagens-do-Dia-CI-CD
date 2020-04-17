@@ -36,7 +36,7 @@ A partir de agora o desenvolvedor não precisa mais se preocupar em como os ajus
 
 Neste caso, no momento em que for criado e aprovado o Pull Request para a branch develop se iniciará o processo de build no Bitrise, conforme é possível ver na imagem abaixo.
 
-![WorkflowRunning](https://github.com/AlissonAp/RN-Mensagens-do-Dia-CI-CD/blob/master/docs/Images_CI_CD/PullRequest.png)
+![WorkflowRunning](https://github.com/AlissonAp/RN-Mensagens-do-Dia-CI-CD/blob/master/docs/Images_CI_CD/RunningWorkflow.png)
 
 
 Como pode-se ver, no processo de build é mostrado qual a origem do disparo deste build. Este, se originou por meio da branch feature/adiciona-novas-mensagens-dia que foi aprovada junto a branch DEVELOP. Também é possível ver o Workflow que será executado, neste caso por ter sido uma alteração na branch DEVELOP, será o Workflow Alfa, que irá liberar uma nova versão na playstore, para pessoas específicas, da área de negócio por exemplo.
